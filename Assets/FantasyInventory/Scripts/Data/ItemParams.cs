@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using Assets.FantasyInventory.Scripts.Enums;
+
+namespace Assets.FantasyInventory.Scripts.Data
+{
+    /// <summary>
+    /// Represents generic item params (common for all items).表示通用物品参数（适用于所有物品）
+    /// </summary>
+    [Serializable]
+    public class ItemParams
+    {
+        public ItemType Type;
+        public List<ItemTag> Tags = new List<ItemTag>();
+        public List<Property> Properties = new List<Property>();
+        public int Price;
+    }
+}
